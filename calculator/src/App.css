@@ -1,1 +1,23 @@
+*, *::before, *::after {
+  box-sizing:border-box;
+}
 
+body{
+  margin: 0;
+  background: linear-gradient(to right, red, yellow);
+}
+
+.calculator-grid{
+  display: grid;
+  margin-top: 2rem;
+  grid-template-rows: minmax(7rem, auto) repeat(4, 6rem );
+  grid-template-columns:  repeat(5, 6rem);
+}
+
+.span2{
+  grid-column: span 2;;
+}
+
+.result{
+  grid-column: 1/-1;;
+}
